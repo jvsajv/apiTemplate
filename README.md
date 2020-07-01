@@ -13,8 +13,35 @@ Just download the repository, add the files to your root folder, and install the
   npm install --only-dev
 ```
 
-PS: If you don't wanna use nodemon, edit package.json
+Now you need to create a file ```.env``` and insert into
 
+```env
+  PORT="port that will run you api"
+```
+
+If you don't wanna use nodemon, edit package.json, change this row:
+
+```json
+  "start": "nodemon src/index.js"
+```
+to this row:
+
+```json
+  "start": "node src/index.js"
+```
+
+Finally, run:
+
+```
+  npm start
+```
+
+## Notes
+* Remember to delete this readme, and add the readme for your project
+
+* I added the main dependencies for the API, but feel free to add any dependencies, just use npm install "name_dependency"
+
+* if you have any doubt or need some help, just make contact...
 
 ## Author
 [chicofariasneto](https://github.com/chicofariasneto)
